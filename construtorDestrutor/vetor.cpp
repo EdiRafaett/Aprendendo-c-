@@ -1,4 +1,4 @@
-#include "construtordestrutor.h"
+#include "vetor.h"
 #include<iostream>
 
 //DELCARAÇÃO DO CONSTRUTOR PADRÃO:

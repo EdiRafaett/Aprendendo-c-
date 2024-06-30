@@ -52,10 +52,10 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../../construtordestrutor.cpp \
-		../../main.cpp 
-OBJECTS       = construtordestrutor.o \
-		main.o
+SOURCES       = ../../main.cpp \
+		../../vetor.cpp 
+OBJECTS       = main.o \
+		vetor.o
 DIST          = /Qt/6.8.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/common/unix.conf \
 		/Qt/6.8.0/gcc_64/mkspecs/common/linux.conf \
@@ -354,6 +354,7 @@ DIST          = /Qt/6.8.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/qt_config.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/spec_post.prf \
+		../../.qmake.stash \
 		/Qt/6.8.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/toolchain.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -367,8 +368,8 @@ DIST          = /Qt/6.8.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/exceptions.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/yacc.prf \
 		/Qt/6.8.0/gcc_64/mkspecs/features/lex.prf \
-		../../../../construtorDestrutor.pro construtordestrutor.h ../../construtordestrutor.cpp \
-		../../main.cpp
+		../../../../construtorDestrutor.pro vetor.h ../../main.cpp \
+		../../vetor.cpp
 QMAKE_TARGET  = construtorDestrutor
 DESTDIR       = 
 TARGET        = construtorDestrutor
@@ -678,6 +679,7 @@ Makefile: ../../construtorDestrutor.pro ../../../../Qt/6.8.0/gcc_64/mkspecs/feat
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Qt/6.8.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -991,6 +993,7 @@ Makefile: ../../construtorDestrutor.pro ../../../../Qt/6.8.0/gcc_64/mkspecs/feat
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/qt_config.prf:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/toolchain.prf:
 ../../../../Qt/6.8.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -1048,11 +1051,11 @@ compiler_clean:
 
 ####### Compile
 
-construtordestrutor.o: ../../construtordestrutor.cpp ../../construtordestrutor.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o construtordestrutor.o ../../construtordestrutor.cpp
-
-main.o: ../../main.cpp ../../construtordestrutor.h
+main.o: ../../main.cpp ../../vetor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../../main.cpp
+
+vetor.o: ../../vetor.cpp ../../vetor.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o vetor.o ../../vetor.cpp
 
 ####### Install
 

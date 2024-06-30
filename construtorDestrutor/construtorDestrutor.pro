@@ -4,8 +4,8 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        construtordestrutor.cpp \
-        main.cpp
+        main.cpp \
+        vetor.cpp
 
 HEADERS += \
-    construtordestrutor.h
+    vetor.h

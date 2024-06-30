@@ -1,5 +1,5 @@
-#ifndef CONSTRUTORDESTRUTOR_H
-#define CONSTRUTORDESTRUTOR_H
+#ifndef VETOR_H
+#define VETOR_H
 
 class Vetor{
 private:
@@ -20,4 +20,4 @@ public:
     float getY(void);
 };
 
-#endif // CONSTRUTORDESTRUTOR_H
+#endif // VETOR_H

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "construtordestrutor.h" //incluindo arquivo de header da classe
+#include "vetor.h" //incluindo arquivo de header da classe
 
 int main(){
     Vetor v1, v2, v3(7,8), v4(3); // v1, v2 e v3 são os identificadores (nomes) dos objetos da classe Vetor2d (é através deles que chamaremos os métodos da classe
