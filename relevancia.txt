@@ -1,0 +1,6 @@
+Importante lembrar:
+O nome do diretório que guar um projeto pode ser uma coisa 
+O nome dos arquivos da classe podem ser outros 
+E o nome da própria classe pode ser outro diferente dos citados
+Os includes de arquivo de header por outro lado é o nome dado ao arquivo em si e não o nome da classe, so que geralmente o que é feito é ter
+o nome do arquivo o nome dos arquivos de uma classe e o nome definido para essa classe iguais afim de manter uma melhor orientação do programador
