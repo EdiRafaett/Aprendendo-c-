@@ -1,9 +1,0 @@
-1 - Conceitos bem básicos (aloCpp)
-2 - vetor2d
-3 - vetor2dComClasse
-4 - ConstrutorDestrutor
-5 - Referencias
-6 - Construtor de cópia 
-7 - Sobrecarga de métodos 
-8 - Funções amigas (sobrecarga de operador * também)
-
